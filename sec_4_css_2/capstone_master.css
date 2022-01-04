@@ -1,0 +1,46 @@
+/* use height and width instead of padding to change the size of content
+use body tag instead of * tag to change everything in the body
+use percentages most of the time instead of exact pixels
+use colors in hex format */
+
+
+*{
+    font-family: Arial;
+    text-align: center;
+    color: white;
+}
+
+body{
+    background-color: rgb(27, 66, 88);
+    border-bottom: 80px solid cyan;
+    border-left: 50px solid cyan;
+    border-right: 50px solid cyan;
+    margin: 50px 0px 0px 0px;
+
+}
+
+p{
+    font-size: 1.15em;
+}
+
+h2{
+    margin-top: 50px
+}
+.para{
+    margin-left: 16.66%;
+    margin-right: 16.66%;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+input{
+    color: black
+}
+
+input[type='submit']{
+    padding: 33px;
+    border-radius: 20px;
+    background-color: orange;
+    border: 2px solid white;
+    color: white
+}

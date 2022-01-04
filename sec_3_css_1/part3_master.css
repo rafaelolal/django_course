@@ -1,0 +1,28 @@
+.firstDiv{
+    color:darkmagenta;
+}
+
+.secondDiv{
+    color:darkturquoise;
+}
+
+#singledout{
+    color:deeppink;
+    text-decoration: line-through;
+}
+
+/* grabs every ul element that is placed directly after an h3 */
+h3 + ul{
+    border: 4px dotted peru;
+}
+
+/* all a tags inside li tags */
+li a{
+    color:royalblue;
+}
+
+/* grabs all a tags inside li tags with a specific property */
+li a[href="https://www.npr.org"]{
+    color:seagreen;
+    border: 2px solid hotpink;
+}

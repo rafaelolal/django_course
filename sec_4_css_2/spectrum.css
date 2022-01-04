@@ -1,0 +1,70 @@
+h1{
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+table{
+    margin:auto
+}
+
+tr{
+    margin: 50px
+}
+
+td{
+    height: 250px;
+    width: 100px;
+    border: 25px solid white;
+}
+
+#one{
+    background-color: rgb(255, 0, 85);
+}
+
+#two{
+    background-color: lawngreen;
+}
+
+#three{
+    background-color: lightcoral;
+}
+
+#four{
+    background-color: lightskyblue;
+}
+
+#five{
+    background-color: magenta;
+}
+
+#six{
+    background-color: mediumblue;
+}
+
+#seven{
+    background-color: mediumspringgreen;
+}
+
+#eight{
+    background-color: olivedrab;
+}
+
+#nine{
+    background-color: orangered;
+}
+
+#ten{
+    background-color: paleturquoise;
+}
+
+#eleven{
+    background-color: purple;
+}
+
+#twelve{
+    background-color: seagreen;
+}
+
+#thirteen{
+    background-color: springgreen;
+}

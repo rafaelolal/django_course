@@ -1,0 +1,46 @@
+body{
+    background-color: #70c7dd;
+}
+
+h1{
+    border: 1px solid black;
+}
+
+h2{
+    color:purple;
+}
+
+input{
+    border: 2px solid rgb(150, 0, 0);
+}
+
+div p{
+    background-color: #d3e591;
+}
+
+
+#textblock{
+    border: 5px solid gray;
+    width: 800px;
+    height: 400px;
+}
+
+
+a[href="https://www.google.com"]{
+    color: red;
+    
+}
+
+a:visited{
+    color: pink;
+}
+
+#itemone{
+    text-decoration: overline;
+    color: purple;
+}
+
+.exit{
+    background-color: blue;
+    border: 4px dashed yellow;
+}
