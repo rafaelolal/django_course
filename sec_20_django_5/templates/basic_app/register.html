@@ -1,0 +1,20 @@
+{% extends 'basic_app/base.html' %}
+{% load static %}
+
+{% block body_block %}
+{% if registered %}
+    <h1>Thank you for creating an account, now login!</h1>
+    <a href="{% url 'basic_app:user_login'%}"><button class="btn btn-primary btn-lg" type="button">Login</button></a>
+
+{%else%}
+    <h1>Register here!</h1>
+    <h3>Fill out the form!</h3>
+
+    <form method="post" enctype='multipart/form-data'>
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        {{ profile_form.as_p }}
+        <input type="submit", class='btn btn-success', value='Register'>
+    </form>
+{% endif %}
+{% endblock body_block %}

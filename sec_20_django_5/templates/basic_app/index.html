@@ -1,0 +1,16 @@
+{%extends "basic_app/base.html" %}
+
+{% block body_block %}
+<h1 class="display-5 fw-bold">Django Level 5</h1>
+{% if user.is_authenticated %}
+    <p class="col-md-8 fs-4">Press the logout button!</p>
+    <a href="{% url 'basic_app:user_logout'%}"><button class="btn btn-primary btn-lg" type="button">Logout</button></a>
+    {% if user.userprofileinfo.profile_pic %}
+        <p><img src="{{ user.userprofileinfo.profile_pic.url }}" alt=""></p>
+    {% endif %}
+{% else %}
+    <p class="col-md-8 fs-4">Press register or login button!</p>
+    <a href="{% url 'basic_app:register'%}"><button class="btn btn-primary btn-lg" type="button">Register</button></a>
+    <a href="{% url 'basic_app:user_login'%}"><button class="btn btn-primary btn-lg" type="button">Login</button></a>
+{% endif %}
+{% endblock body_block %}

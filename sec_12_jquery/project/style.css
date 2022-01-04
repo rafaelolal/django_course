@@ -1,0 +1,6 @@
+.btn-secondary {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(128, 128, 128);
+}
