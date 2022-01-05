@@ -9,5 +9,5 @@
 {% for student in school_detail.students.all %}
     <p>{{student.name}}, {{student.age}} years old</p>
 {% endfor %}
-
+<p><a class='btn btn-warning' href="{%url 'class_view:update' pk=school_detail.pk%}">Update</a></p>
 {% endblock body_block %}

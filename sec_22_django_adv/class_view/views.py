@@ -1,6 +1,10 @@
 from typing import Any, Dict
 from django.shortcuts import render
-from django.views.generic import TemplateView, ListView, DetailView
+from django.views.generic import (TemplateView, ListView,
+    DetailView, CreateView,
+    UpdateView, DeleteView)
+
+from django.urls import reverse_lazy
 
 from class_view.models import School
 
@@ -23,3 +27,15 @@ class SchoolDetailView(DetailView):
     context_object_name = "school_detail"
     model = School
     template_name = 'class_view/school_detail.html'
+
+class SchoolCreateView(CreateView):
+    fields = ['name', 'principal', 'location']
+    model = School
+
+class SchoolUpdateView(UpdateView):
+    fields = ['principal', 'name']
+    model = School
+
+class SchoolDeleteView(DeleteView):
+    model = School
+    success_url = reverse_lazy("class_view:list")
