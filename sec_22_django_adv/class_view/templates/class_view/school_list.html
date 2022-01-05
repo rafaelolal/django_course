@@ -1,0 +1,9 @@
+{% extends 'class_view//class_view_base.html' %}
+{% block body_block %}
+<h1>List of all the school!</h1>
+<ol>
+    {% for school in school_list %}
+    <h2><li><a href="{{school.id}}">{{school.name}}</a></li></h2>
+    {% endfor %}
+</ol>
+{% endblock body_block %}
